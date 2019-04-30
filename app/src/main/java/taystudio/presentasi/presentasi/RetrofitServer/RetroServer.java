@@ -7,8 +7,8 @@ import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
 public class RetroServer {
-    public static final String base_url = "http://192.168.2.15:8888/presentasi/";
-    public static final String base_images = "http://192.168.2.15:8888/presentasi/public/images/";
+    public static final String base_url = "http://192.168.43.229:8888/presentasi/";
+    public static final String base_images = "http://192.168.43.229:8888/presentasi/public/images/";
 
     private static Retrofit retrofit;
 
