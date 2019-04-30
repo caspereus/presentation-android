@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ContactFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/circleImages"
+                android:scaleType="centerCrop"
+                android:layout_width="100dp"
+                android:layout_height="100dp" />
+            <LinearLayout
+                android:layout_marginLeft="10dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tvNameProfile"
+                    android:layout_marginTop="14dp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/open_sans"
+                    android:textSize="16dp"
+                    android:textColor="@color/primaryText"
+                    android:textAlignment="center"
+                    android:text="I Putu Aldy Cahyakusuma."
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/tvPositionProfile"
+                    android:fontFamily="@font/open_sans"
+                    android:textColor="@color/secondaryText"
+                    android:text="CO Founder Kitekodein.com"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/cardFacebook"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/facebook"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp" />
+
+                    <ImageView
+                        android:id="@+id/cardInstagram"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/instagram"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp" />
+
+                    <ImageView
+                        android:id="@+id/cardWhatsapp"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/whatsapp"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp" />
+
+                    <ImageView
+                        android:id="@+id/cardWebsite"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/flickr"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+        <View
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:background="#f1f1f1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"></View>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textColor="@color/primaryText"
+                android:fontFamily="@font/open_sans"
+                android:text="Email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tvcemail"
+                android:textColor="@color/secondaryText"
+                android:text="Current Email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:textColor="@color/primaryText"
+                android:fontFamily="@font/open_sans"
+                android:text="Phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tvcphone"
+                android:textColor="@color/secondaryText"
+                android:text="Current Phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:textColor="@color/primaryText"
+                android:fontFamily="@font/open_sans"
+                android:text="Address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tvcaddress"
+                android:textColor="@color/secondaryText"
+                android:text="Current Address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/vmlogo"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

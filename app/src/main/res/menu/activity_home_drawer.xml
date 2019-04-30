@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item android:title="Menu">
+        <menu>
+            <item
+                android:iconTint="@color/textIcon"
+                android:id="@+id/nav_profile"
+                android:icon="@drawable/ic_dashboard_black_24dp"
+                android:title="Dashboard" />
+            <item
+                android:iconTint="@color/textIcon"
+                android:id="@+id/nav_about"
+                android:icon="@drawable/ic_person_black_24dp"
+                android:title="About" />
+            <item
+                android:iconTint="@color/textIcon"
+                android:id="@+id/nav_gallery"
+                android:icon="@drawable/ic_menu_gallery"
+                android:title="Photo" />
+            <item
+                android:id="@+id/nav_slideshow"
+                android:icon="@drawable/ic_description_black_24dp"
+                android:title="Article" />
+            <item
+                android:visible="false"
+                android:id="@+id/nav_event"
+                android:icon="@drawable/ic_menu_slideshow"
+                android:title="Event" />
+            <item
+                android:id="@+id/nav_video"
+                android:icon="@drawable/ic_menu_slideshow"
+                android:title="Video" />
+            <item
+                android:iconTint="@color/textIcon"
+                android:id="@+id/nav_contact"
+                android:icon="@drawable/ic_local_phone_black_24dp"
+                android:title="Contact" />
+        </menu>
+    </item>
+
+    <item android:title="Communicate" android:visible="false">
+        <menu>
+            <item
+                android:iconTint="@color/textIcon"
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+            <item
+                android:iconTint="@color/textIcon"
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Send" />
+        </menu>
+    </item>
+
+</menu>

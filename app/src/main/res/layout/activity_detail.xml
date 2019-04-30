@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DetailActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/cover_image"
+                android:scaleType="centerCrop"
+                android:src="@drawable/group"
+                android:layout_width="match_parent"
+                android:layout_height="300dp" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+                <TextView
+                    android:textSize="20dp"
+                    android:id="@+id/detail_title"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/open_sans"
+                    android:textColor="@color/primaryText"
+                    android:text="Android Developer Meeting"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/detail_date"
+                    android:fontFamily="@font/open_sans"
+                    android:text="Date : 1 June 2018 / 07 - 00"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:fontFamily="@font/crimson_text"
+                    android:textColor="@color/primaryText"
+                    android:textSize="20sp"
+                    android:id="@+id/detail_desc"
+                    android:layout_marginTop="10dp"
+                    android:text="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae expedita dolore, ex dignissimos pariatur, repudiandae rerum et alias, qui commodi quod laborum dicta eos tempora officia a illo aspernatur reprehenderit!"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <Button
+                    android:id="@+id/btnFileOpen"
+                    android:fontFamily="@font/open_sans"
+                    android:textColor="@color/textIcon"
+                    android:text="OPEN PPT File"
+                    android:layout_marginTop="20dp"
+                    android:background="#f74242"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <Button
+                    android:paddingLeft="10dp"
+                    android:drawableStart="@drawable/ic_favorite_black_24dp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/btnLike"
+                    android:textColor="@color/textIcon"
+                    android:fontFamily="@font/quicksand_bold"
+                    android:background="@color/darkGray"
+                    android:layout_width="45dp"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:visibility="gone"
+                    android:textAlignment="center"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/open_sans"
+                    android:text="The overall value of the presentation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <RatingBar
+                    android:visibility="gone"
+                    android:layout_gravity="center"
+                    android:numStars="5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

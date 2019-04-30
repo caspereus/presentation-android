@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".GalleryDetail">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/myswipe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/hidden_layout"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_gravity="center_horizontal"
+                        android:id="@+id/blank_image"
+                        android:layout_marginTop="120dp"
+                        android:src="@drawable/blank"
+                        android:layout_width="90dp"
+                        android:layout_height="100dp" />
+                    <TextView
+                        android:id="@+id/blank_text"
+                        android:textSize="17sp"
+                        android:fontFamily="@font/open_sans"
+                        android:layout_marginTop="20dp"
+                        android:textAlignment="center"
+                        android:text="There is no data for now"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler_temp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <Button
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:paddingLeft="10dp"
+                        android:drawableStart="@drawable/ic_favorite_black_24dp"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/btnLike"
+                        android:textColor="@color/textIcon"
+                        android:fontFamily="@font/quicksand_bold"
+                        android:background="@color/darkGray"
+                        android:layout_width="45dp"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+</LinearLayout>

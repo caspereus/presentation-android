@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".FormActivity">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_marginRight="10dp"
+            android:src="@drawable/ic_main_logo"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textStyle="bold"
+                android:textColor="@color/primaryText"
+                android:textSize="25sp"
+                android:fontFamily="@font/open_sans"
+                android:text="Hello everyone."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:textColor="@color/secondaryText"
+                android:fontFamily="@font/open_sans"
+                android:text="Welcome to my presentation App."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/tvName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:ems="10"
+        android:fontFamily="@font/open_sans"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:textColor="@color/colorPrimaryDark"
+        app:met_floatingLabel="normal"
+        app:met_maxCharacters="40" />
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/tvEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:ems="10"
+        android:fontFamily="@font/open_sans"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/colorPrimaryDark"
+        app:met_floatingLabel="normal"
+        app:met_maxCharacters="30" />
+
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/tvPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:ems="10"
+        android:fontFamily="@font/open_sans"
+        android:hint="Phone"
+        android:inputType="number"
+        android:textColor="@color/colorPrimaryDark"
+        app:met_floatingLabel="normal"
+        app:met_maxCharacters="13" />
+
+    <Button
+        android:id="@+id/btnSignIn"
+        android:fontFamily="@font/open_sans"
+        android:textColor="@color/textIcon"
+        android:text="Sign in"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ProgressBar
+        android:id="@+id/loadingBar"
+        android:visibility="invisible"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

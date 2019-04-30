@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".VideoDetailActivity">
+
+    <com.google.android.youtube.player.YouTubePlayerView
+        android:id="@+id/videoPlayer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></com.google.android.youtube.player.YouTubePlayerView>
+
+    <LinearLayout
+        android:padding="20dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textStyle="bold"
+            android:textColor="@color/primaryText"
+            android:fontFamily="@font/quicksand_bold"
+            android:text="Example Title"
+            android:id="@+id/titleVideo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:fontFamily="@font/crimson_text"
+            android:textColor="@color/primaryText"
+            android:textSize="20sp"
+            android:id="@+id/descriptionVideo"
+            android:text="Example Description"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:layout_alignParentBottom="true"
+                android:paddingLeft="10dp"
+                android:drawableStart="@drawable/ic_favorite_black_24dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/btnLike"
+                android:textColor="@color/textIcon"
+                android:fontFamily="@font/quicksand_bold"
+                android:background="@color/darkGray"
+                android:layout_width="45dp"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

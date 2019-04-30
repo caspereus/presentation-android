@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:padding="40dp"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/ppt"
+        android:layout_width="120dp"
+        android:layout_height="120dp" />
+
+    <TextView
+        android:id="@+id/tv_file_name"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/primaryText"
+        android:textSize="20sp"
+        android:fontFamily="@font/open_sans"
+        android:text="DevCarier.ppt"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/download"
+        android:textColor="@color/secondaryText"
+        android:fontFamily="@font/open_sans"
+        android:text="Size : 80kb"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/btnViewPPT"
+        android:fontFamily="@font/open_sans"
+        android:text="DOWNLOAD PPT"
+        android:background="#f74242"
+        android:textColor="@color/textIcon"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

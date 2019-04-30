@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    android:id="@+id/cardLayout"
+    android:layout_margin="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:padding="10dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/imageEvent"
+            android:src="@drawable/group"
+            android:layout_width="match_parent"
+            android:layout_height="250dp" />
+        <TextView
+            android:layout_marginTop="10dp"
+            android:id="@+id/titleEvent"
+            android:textStyle="bold"
+            android:textColor="@color/primaryText"
+            android:fontFamily="@font/open_sans"
+            android:text="Indonesia Developer Topic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/placeEvent"
+            android:fontFamily="@font/open_sans"
+            android:text="Gedung Metro Jakarta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/dateEvent"
+            android:text="End Date : 01 October 2018 / 07-00"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>

@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "858336964729",
+    "firebase_url": "https://personalapp-fba08.firebaseio.com",
+    "project_id": "personalapp-fba08",
+    "storage_bucket": "personalapp-fba08.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:858336964729:android:c43db62aa3037128",
+        "android_client_info": {
+          "package_name": "taystudio.presentasi.presentasi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "858336964729-4j0ph52gvl36gdvn93654jud9bsa72k6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBf5yKS0fst18MLDfd4ErETx_oRRWAt1AM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

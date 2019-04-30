@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/linearPrimary"
+    tools:context=".ProfileFragment">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/myswipe"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:padding="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/circleImages"
+                    android:scaleType="centerCrop"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp" />
+                <LinearLayout
+                    android:layout_marginLeft="10dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tvNameProfile"
+                        android:layout_marginTop="14dp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/open_sans"
+                        android:textSize="16dp"
+                        android:textColor="@color/primaryText"
+                        android:textAlignment="center"
+                        android:text="Example Name."
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/tvPositionProfile"
+                        android:fontFamily="@font/open_sans"
+                        android:textColor="@color/secondaryText"
+                        android:text="Example data"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <LinearLayout
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/cardFacebook"
+                            android:layout_marginRight="10dp"
+                            android:src="@drawable/facebook"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp" />
+
+                        <ImageView
+                            android:id="@+id/cardInstagram"
+                            android:layout_marginRight="10dp"
+                            android:src="@drawable/instagram"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp" />
+
+                        <ImageView
+                            android:id="@+id/cardWhatsapp"
+                            android:layout_marginRight="10dp"
+                            android:src="@drawable/whatsapp"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp" />
+
+                        <ImageView
+                            android:id="@+id/cardWebsite"
+                            android:layout_marginRight="10dp"
+                            android:src="@drawable/flickr"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:background="#f1f1f1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"></View>
+
+
+            <ProgressBar
+                android:id="@+id/primaryProgress"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/textVisible"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/quicksand_bold"
+                android:textAlignment="center"
+                android:text="Data is Empty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/linearEvent"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/primaryText"
+                    android:text="Events"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <LinearLayout
+                    android:id="@+id/hidden_layout"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_gravity="center_horizontal"
+                        android:id="@+id/blank_image"
+                        android:src="@drawable/blank"
+                        android:layout_width="90dp"
+                        android:layout_height="100dp" />
+                    <TextView
+                        android:id="@+id/blank_text"
+                        android:textSize="17sp"
+                        android:fontFamily="@font/open_sans"
+                        android:layout_marginTop="20dp"
+                        android:textAlignment="center"
+                        android:text="There is no data for now"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler_temp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+
+                <Button
+                    android:id="@+id/btnMoreEvent"
+                    android:fontFamily="@font/quicksand_bold"
+                    android:textColor="@color/textIcon"
+                    android:text="MORE EVENT"
+                    android:background="@color/colorPrimary"
+                    android:layout_margin="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearArticle"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/primaryText"
+                    android:text="Articles"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <LinearLayout
+                    android:id="@+id/hidden_layout2"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_gravity="center_horizontal"
+                        android:id="@+id/blank_image2"
+                        android:src="@drawable/blank"
+                        android:layout_width="90dp"
+                        android:layout_height="100dp" />
+                    <TextView
+                        android:id="@+id/blank_text2"
+                        android:textSize="17sp"
+                        android:fontFamily="@font/open_sans"
+                        android:layout_marginTop="20dp"
+                        android:textAlignment="center"
+                        android:text="There is no data for now"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler_temp2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+
+                <Button
+                    android:id="@+id/btnMoreArticle"
+                    android:fontFamily="@font/quicksand_bold"
+                    android:textColor="@color/textIcon"
+                    android:text="MORE ARTICLE"
+                    android:background="@color/colorPrimary"
+                    android:layout_margin="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/vmlogo"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <TextView
+                android:visibility="gone"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:fontFamily="@font/open_sans"
+                android:textSize="20sp"
+                android:textColor="@color/primaryText"
+                android:layout_marginLeft="10dp"
+                android:text="Event Today."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <android.support.v7.widget.CardView
+                android:visibility="gone"
+                app:cardElevation="10dp"
+                android:fadingEdgeLength="1dp"
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:padding="10dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/imageEvent"
+                        android:src="@drawable/group"
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp" />
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:textSize="20sp"
+                        android:id="@+id/titleEvent"
+                        android:textStyle="bold"
+                        android:textColor="@color/primaryText"
+                        android:fontFamily="@font/open_sans"
+                        android:text="Indonesia Developer Topic"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/placeEvent"
+                        android:fontFamily="@font/open_sans"
+                        android:text="Gedung Metro Jakarta"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/dateEvent"
+                        android:text="End Date : 01 October 2018 / 07-00"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <Button
+                        android:id="@+id/btnJoinEvent"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/textIcon"
+                        android:background="@color/colorPrimary"
+                        android:text="JOIN EVENT"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+
+        </LinearLayout>
+    </ScrollView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+
+</LinearLayout>
